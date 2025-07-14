@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>821</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Main Window or Dialog Background */
+QWidget {
+    background-color: #333333; /* Dark grey background */
+    color: yellow; /* Yellow text */
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 14px; /* Font size */
+}
+
+/* Labels (Username, Password) */
+QLabel {
+    color: yellow; /* Yellow text */
+    font-size: 16px; /* Larger font size for labels */
+    font-weight: bold; /* Bold text */
+}
+
+/* Specific Label (label_4) */
+QLabel#label_4 {
+    color: #555555; /* Yellow text */
+    padding: 5px; /* Padding inside the label */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Line Edits (Input Fields) */
+QLineEdit {
+    background-color: #444444; /* Darker grey background */
+    color: yellow; /* Yellow text */
+    border: 1px solid yellow; /* Yellow border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the input field */
+    font-size: 14px; /* Font size */
+}
+
+/* Push Buttons (Login, Register) */
+QPushButton {
+    background-color: yellow; /* Yellow background */
+    color: black; /* Black text */
+    border: 1px solid yellow; /* Yellow border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the button */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+}
+
+/* Push Button Hover Effect */
+QPushButton:hover {
+    background-color: #cccc00; /* Darker yellow on hover */
+    border: 1px solid #cccc00; /* Darker yellow border on hover */
+}
+
+/* Push Button Pressed Effect */
+QPushButton:pressed {
+    background-color: #999900; /* Even darker yellow when pressed */
+    border: 1px solid #999900; /* Even darker yellow border when pressed */
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="wifi_label">
+        <property name="text">
+         <string>Wi-Fi not connected</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="battery_label">
+        <property name="text">
+         <string>Battery: 100%</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="settings_button">
+        <property name="text">
+         <string>Settings</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../resources/KiwiFieldDay.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="land_takeoff_button">
+        <property name="text">
+         <string>Take Off</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="flight_time_label_2">
+        <property name="text">
+         <string>Flight Time: 0:00</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="speed_label_2">
+        <property name="text">
+         <string>Speed: 30</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="height_label_2">
+        <property name="text">
+         <string>Height: 0m</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="microphone_button">
+        <property name="text">
+         <string>🎤</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>821</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
